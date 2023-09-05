@@ -1,0 +1,59 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@{
+    DateTime dateTime = DateTime.Now;
+    int today = DateTime.Today.Day;
+    int day = (int)System.DateTime.Now.DayOfWeek;
+    String month = DateTime.Now.ToString("MMMM");
+    string dayOfTheWeek = " ";
+    if (day == 1)
+    {
+        dayOfTheWeek = "Monday";
+    }
+    else if (day == 2)
+    {
+        dayOfTheWeek = "Tuesday";
+    }
+    else if (day == 3)
+    {
+        dayOfTheWeek = "Wednesday";
+    }
+    else if(day == 4)
+    {
+        dayOfTheWeek = "Thursday";
+    }
+    else if(day == 5)
+    {
+        dayOfTheWeek = "Friday";
+    }
+    else if(day == 6)
+    {
+        dayOfTheWeek = "Saturday";
+    }
+    else if(day == 7)
+    {
+        dayOfTheWeek = "Sunday";
+    }
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    @{
+        if(dateTime.Hour < 12)
+        {
+            <p><mark style="background-color: yellow"> It is morning on @dayOfTheWeek, @today, @month</mark></p>
+        }
+        else if (dateTime.Hour >= 12 && dateTime.Hour < 17)
+        {
+            <p><mark style="background-color: yellow"> It is afternoon on @dayOfTheWeek, @today, @month </mark></p>
+        } else
+        {
+            <p><mark style="background-color: yellow"> It is evening on @dayOfTheWeek, @today, @month. </mark></p>
+        }
+    }
+
+
+
+</div>

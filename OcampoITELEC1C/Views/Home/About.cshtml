@@ -1,0 +1,28 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+<link rel="stylesheet" href="~/css/About.css" asp-append-version="true" />
+<link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet"/>
+
+@{
+    ViewData["Title"] = "About Me";
+
+    var name = "John Daniel Ocampo";
+    var email = "johndaniel.ocampo.cics@ust.edu.ph";
+    var age = 21;
+}
+
+<div class="container">
+    <div class="imgContainer" >
+        <div class="circle"></div>
+        <img class="image1" src="~/lib/assets/Dane.png" alt="#">
+    </div>
+    <h1>About Me</h1>
+    <h3>Name:</h3>
+    <h5>@name</h5>
+    <h3>Email:</h3>
+    <h5>@email</h5>
+    <h3>Age:</h3>
+    <h5>@age</h5>
+</div>
+

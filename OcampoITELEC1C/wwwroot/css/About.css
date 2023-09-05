@@ -1,0 +1,49 @@
+﻿h1{
+    text-align: left;
+    font-size: 50px;
+    color: #659DBD;
+    margin:20px;
+    font-weight:bold;
+    font-family: 'Gilroy-Bold', sans-serif;
+
+}
+h3{
+    text-align:left;
+    font-size: 25px;
+    color: #8D8741;
+    margin:20px;
+    font-weight:bold;
+    font-family:'Gilroy-Bold', sans-serif;
+}
+h5{
+    text-align:left;
+    font-size: 20px;
+    color: black;
+    margin: 20px;
+    font-family:'Gilroy-Regular', sans-serif;
+}
+.image1{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    float: left;
+    position: relative;
+    display:flex;
+    margin: 20px;
+}
+.container{
+    position: relative;
+    width: 100%;
+}
+.imgcontainer{
+    position: relative;
+}
+.circle{
+    border-radius:50%;
+    background-color:#659DBD;
+    width: 300px;
+    height: 300px;
+    position:absolute;
+    margin-top: 20px;
+    float:left;
+}
