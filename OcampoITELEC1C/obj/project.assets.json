@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\daneo\\source\\repos\\OcampoITELEC1C\\OcampoITELEC1C.csproj",
+      "projectUniqueName": "C:\\Users\\daneo\\Documents\\GitHub\\Ocampo_ITELEC1C\\OcampoITELEC1C\\OcampoITELEC1C.csproj",
       "projectName": "OcampoITELEC1C",
-      "projectPath": "C:\\Users\\daneo\\source\\repos\\OcampoITELEC1C\\OcampoITELEC1C.csproj",
+      "projectPath": "C:\\Users\\daneo\\Documents\\GitHub\\Ocampo_ITELEC1C\\OcampoITELEC1C\\OcampoITELEC1C.csproj",
       "packagesPath": "C:\\Users\\daneo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\daneo\\source\\repos\\OcampoITELEC1C\\obj\\",
+      "outputPath": "C:\\Users\\daneo\\Documents\\GitHub\\Ocampo_ITELEC1C\\OcampoITELEC1C\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

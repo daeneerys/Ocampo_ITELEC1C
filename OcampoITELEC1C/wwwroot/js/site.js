@@ -3,6 +3,4 @@
 
 // Write your JavaScript code.
 
-function Employee() {
-    document.getElementById('div-Employee').style.display = "block";
-}
+

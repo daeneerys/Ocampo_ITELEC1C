@@ -1,16 +1,140 @@
 ﻿@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
+<link rel="stylesheet" href="~/css/Employee.css" asp-append-version="true" />
+<link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet" />
 @{
     ViewData["Title"] = "Employee";
 
-    String FirstName = " ";
-    String LastName = " ";
-    String IsTenured = " ";
-    String Email = " ";
-    int SalaryPerHour;
-    //Birthday
+    String FirstName = "Gabriel";
+    String LastName = "Montano";
+    String IsTenured = "probationary";
+    String Email = "gdmontano@ust.edu.ph";
+    int SalaryPerHour = 80;
+    DateTime Birthday = Convert.ToDateTime("2001/09/15");
+    int age = CalculateAge(Birthday);
+
+    static int CalculateAge(DateTime dateOfBirth)
+    {
+        int age = 0;
+        age = DateTime.Now.Year - dateOfBirth.Year;
+        if (DateTime.Now.DayOfYear < dateOfBirth.DayOfYear)
+            age = age - 1;
+
+        return age;
+    }
 
 }
+<div class = "FirstContainer">
+    <div class = "EmployeeContainer">
+        <h1>Employee</h1>
 
-<h1>Output A</h1>
+        <h3>OUTPUT A</h3>
+        <p>I'm @FirstName @LastName and I'm @age years old </p>
+
+        <h3>OUTPUT B</h3>
+        <p>Email: @Email </p>
+        <p>Domain: @Email.Substring(Email.IndexOf("@") + 1)</p>
+        <p>Username:@Email.Substring(0, Email.IndexOf("@")) </p>
+
+        <h3>OUTPUT C</h3>
+        @{
+            if (string.Equals(IsTenured, "Probationary",StringComparison.OrdinalIgnoreCase)) {
+                <p>Name: @FirstName @LastName </p>
+                <p>Email: @Email </p>
+                <p>Status: @IsTenured </p>
+                <p>Daily Salary: $@(SalaryPerHour * 8) </p>
+                <p>Monthly Salary: $@((SalaryPerHour * 8) * 30)</p>
+            }
+            else if (string.Equals(IsTenured, "Permanent", StringComparison.OrdinalIgnoreCase))
+            {
+                <p>Name: @FirstName @LastName </p>
+                <p>Email: @Email </p>
+                <p>Status: @IsTenured </p>
+                <p>Daily Salary: $@(SalaryPerHour * 8) </p>
+                <p>Monthly Salary: $@(((SalaryPerHour * 8) * 30) + 500) </p>
+            }
+        }
+    </div>
+</div>
+<div class = StudentContainer >
+@{
+    String Name = "Gabriel Montano";
+    int PrelimGrade = 92;
+    int FinalGrade = 90;
+    int SemGrade = (PrelimGrade + FinalGrade) / 2;
+
+    <h1>Student</h1>
+    <h3>OUTPUT D</h3>
+    if (SemGrade >= 96 && SemGrade <= 100)
+    {
+        <p>Name: @Name</p>
+        <p>Prelim Grade: @PrelimGrade</p>
+        <p>Final Grade: @FinalGrade</p>
+        <p>Transmuted Grade: 1.00</p>
+    }
+    else if (SemGrade >= 94 && SemGrade <= 95)
+    {
+        <p>Name: @Name</p>
+        <p>Prelim Grade: @PrelimGrade</p>
+        <p>Final Grade: @FinalGrade</p>
+        <p>Transmuted Grade: 1.25</p>
+    }
+    else if (SemGrade >= 92 && SemGrade <= 93)
+    {
+        <p>Name: @Name</p>
+        <p>Prelim Grade: @PrelimGrade</p>
+        <p>Final Grade: @FinalGrade</p>
+        <p>Transmuted Grade: 1.50</p>
+    }
+    else if (SemGrade >= 89 && SemGrade <= 91)
+    {
+        <p>Name: @Name</p>
+        <p>Prelim Grade: @PrelimGrade</p>
+        <p>Final Grade: @FinalGrade</p>
+        <p>Transmuted Grade: 1.75 </p>
+    }
+    else if (SemGrade >= 87 && SemGrade <= 88)
+    {
+        <p>Name: @Name</p>
+        <p>Prelim Grade: @PrelimGrade</p>
+        <p>Final Grade: @FinalGrade</p>
+        <p>Transmuted Grade: 2.00</p>
+    }
+    else if (SemGrade >= 84 && SemGrade <= 86)
+    {
+        <p>Name: @Name</p>
+        <p>Prelim Grade: @PrelimGrade</p>
+        <p>Final Grade: @FinalGrade</p>
+        <p>Transmuted Grade: 2.25</p>
+    }
+    else if (SemGrade >= 82 && SemGrade <= 83)
+    {
+        <p>Name: @Name</p>
+        <p>Prelim Grade: @PrelimGrade</p>
+        <p>Final Grade: @FinalGrade</p>
+        <p>Transmuted Grade: 2.50</p>
+    }
+    else if (SemGrade >= 79 && SemGrade <= 81)
+    {
+        <p>Name: @Name</p>
+        <p>Prelim Grade: @PrelimGrade</p>
+        <p>Final Grade: @FinalGrade</p>
+        <p>Transmuted Grade: 2.75</p>
+    }
+    else if (SemGrade >= 75 && SemGrade <= 81)
+    {
+        <p>Name: @Name</p>
+        <p>Prelim Grade: @PrelimGrade</p>
+        <p>Final Grade: @FinalGrade</p>
+        <p>Transmuted Grade: 3.00</p>
+    }
+    else if (SemGrade >= 75)
+    {
+        <p>Name: @Name</p>
+        <p>Prelim Grade: @PrelimGrade</p>
+        <p>Final Grade: @FinalGrade</p>
+        <p>Transmuted Grade: 5.00</p>
+    }
+}
+</div>
