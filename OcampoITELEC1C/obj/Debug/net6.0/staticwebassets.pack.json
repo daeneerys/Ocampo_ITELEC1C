@@ -9,6 +9,14 @@
       "PackagePath": "staticwebassets\\css\\About.css"
     },
     {
+      "Id": "C:\\Users\\daneo\\Documents\\GitHub\\Ocampo_ITELEC1C\\OcampoITELEC1C\\wwwroot\\css\\Employee.css",
+      "PackagePath": "staticwebassets\\css\\Employee.css"
+    },
+    {
+      "Id": "C:\\Users\\daneo\\Documents\\GitHub\\Ocampo_ITELEC1C\\OcampoITELEC1C\\wwwroot\\css\\StyleSheet.css",
+      "PackagePath": "staticwebassets\\css\\StyleSheet.css"
+    },
+    {
       "Id": "C:\\Users\\daneo\\Documents\\GitHub\\Ocampo_ITELEC1C\\OcampoITELEC1C\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
