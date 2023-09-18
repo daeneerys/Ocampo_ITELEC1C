@@ -1,0 +1,47 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model Student;
+<h1>Edit Student</h1>
+
+<form action="Edit" method="post">
+    <div class="form-group mb-2">
+        <label asp-for="Id" class="form-label">ID</label>
+        <input asp-for="Id" class="form-control">
+    </div>
+
+    <div class="form-group mb-2">
+        <label asp-for="FirstName" class="form-label">First Name</label>
+        <input asp-for="FirstName" class="form-control">
+    </div>
+
+    <div class="form-group mb-2">
+        <label asp-for="LastName" class="form-label">Last Name</label>
+        <input asp-for="LastName" class="form-control">
+    </div>
+
+    <div class="form-group mb-2">
+        <label asp-for="Course" class="form-label">Course</label>
+        <select asp-for="Course" asp-items="Html.GetEnumSelectList(typeof(Course))" class="form-control"></select>
+    </div>
+
+    <div class="form-group mb-2">
+        <label asp-for="AdmissionDate" class="form-label">Date Enrolled</label>
+        <input asp-for="AdmissionDate" class="form-control">
+    </div>
+
+    <div class="form-group mb-2">
+        <label asp-for="Email" class="form-label">Email</label>
+        <input asp-for="Email" class="form-control">
+    </div>
+
+    <div class="form-group mb-2">
+        <label asp-for="GPA" class="form-label">GPA</label>
+        <input asp-for="GPA" class="form-control">
+    </div>
+
+
+
+    <button type="submit" class="btn btn-primary">Update</button>
+    <button type = "button" onclick ="history.back()" class ="btn btn-primary">Back</button>
+</form>

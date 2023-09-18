@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <Content Remove="Views\Home\Index1.cshtml" />
+    <Content Remove="Views\Student\Index1.cshtml" />
   </ItemGroup>
 
 </Project>
