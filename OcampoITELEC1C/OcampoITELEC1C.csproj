@@ -7,8 +7,20 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Service\**" />
+    <Compile Remove="Views\NewFolder\**" />
+    <Content Remove="Service\**" />
+    <Content Remove="Views\NewFolder\**" />
+    <EmbeddedResource Remove="Service\**" />
+    <EmbeddedResource Remove="Views\NewFolder\**" />
+    <None Remove="Service\**" />
+    <None Remove="Views\NewFolder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Remove="Views\Home\Index1.cshtml" />
     <Content Remove="Views\Student\Index1.cshtml" />
+    <Content Remove="Views\Student\ShowDetail.cshtml" />
   </ItemGroup>
 
 </Project>

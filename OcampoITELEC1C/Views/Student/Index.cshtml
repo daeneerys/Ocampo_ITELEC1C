@@ -1,6 +1,7 @@
 ﻿
 @model IEnumerable<Student>;
-
+@{
+ViewData["Title"] = "Student";
 <div>Student List</div>
 
 
@@ -10,7 +11,7 @@
             Add Student
         </a>
         <tr>
-            <th colspan="7">Student</th>
+            <th colspan="8">Student</th>
         </tr>
 
         <tr>
@@ -21,6 +22,7 @@
             <td>GPA</td>
             <td>Details</td>
             <td>Edit</td>
+            <td>Delete</td>
            
             
         </tr>
@@ -34,7 +36,9 @@
             <td>@student.GPA</td>
             <td><a asp-action="ShowDetail" asp-route-id="@student.Id">Show Details</a></td>
             <td><a class = "btn btn-primary" type = "button"  asp-action="Edit" asp-route-id="@student.Id">Edit</a></td>
+            <td><a class="btn btn-danger" type="button" asp-action="Delete" asp-route-id="@student.Id">Delete</a></td>
           
         </tr>
     }
 </table>
+}
