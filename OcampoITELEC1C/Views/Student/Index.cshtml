@@ -34,7 +34,7 @@ ViewData["Title"] = "Student";
             <td>@student.AdmissionDate</td>
             <td>@student.Email</td>
             <td>@student.GPA</td>
-            <td><a asp-action="ShowDetail" asp-route-id="@student.Id">Show Details</a></td>
+            <td><a asp-action="ShowDetails" asp-route-id="@student.Id">Show Details</a></td>
             <td><a class = "btn btn-primary" type = "button"  asp-action="Edit" asp-route-id="@student.Id">Edit</a></td>
             <td><a class="btn btn-danger" type="button" asp-action="Delete" asp-route-id="@student.Id">Delete</a></td>
           

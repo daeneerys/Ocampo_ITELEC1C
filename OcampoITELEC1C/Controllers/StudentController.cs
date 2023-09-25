@@ -25,15 +25,16 @@ namespace OcampoITELEC1C.Controllers
             return View(_fakeData.StudentList);
         }
 
-        public IActionResult ShowDetail(int id)
+        public IActionResult ShowDetails(int id)
         {
             //Search for the student whose id matches the given id
             Student? student = _fakeData.StudentList.FirstOrDefault(st => st.Id == id);
-            
+
             if (student != null)//was an student found?
-                return RedirectToAction("Index");
+                return View(student);
 
             return NotFound();
+
         }
         [HttpGet]
         public IActionResult AddStudent()
