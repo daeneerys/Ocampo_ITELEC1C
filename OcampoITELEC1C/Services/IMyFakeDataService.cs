@@ -8,4 +8,3 @@ namespace OcampoITELEC1C.Serivces
         List<Student> StudentList { get; }
     }
 }
-    

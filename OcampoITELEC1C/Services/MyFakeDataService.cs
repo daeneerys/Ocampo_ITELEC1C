@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using OcampoITELEC1C.Serivces;
 using OcampoITELEC1C.Models;
 namespace OcampoITELEC1C.Serivces
@@ -56,4 +56,3 @@ namespace OcampoITELEC1C.Serivces
 }
 
        
- 

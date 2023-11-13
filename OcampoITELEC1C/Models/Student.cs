@@ -1,4 +1,6 @@
-﻿namespace OcampoITELEC1C.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace OcampoITELEC1C.Models
 {
     public enum Course
     {
@@ -7,14 +9,35 @@
 
     public class Student
     {
-       
-        public int Id { get; set; }
+
+        [Display( Name = "FirstName")]
+        [Required(ErrorMessage = " * First Name is Required")]
         public string FirstName { get; set; }
+
+        [Display(Name = "Last Name")]
+        [Required(ErrorMessage = "* Last Name is required")]
         public string LastName { get; set; }
+
+        [Display(Name = "GPA")]
+        [Required(ErrorMessage = "* GPA is required")]
         public double GPA { get; set; }
+
+
+        [Display(Name = "Course")]
+        [Required(ErrorMessage = "* Course is required")]
         public Course Course { get; set; }
+
+
+        [Display(Name = "GPA")]
+        [DataType(DataType.Date)]
+        [Required(ErrorMessage = "* Admission Date is required")]
         public DateTime AdmissionDate { get; set; }
+
+        [EmailAddress]
+        [Display(Name = "Email")]
         public string Email { get; set; }
+
+        public int Id { get; set; }
 
     }
 }

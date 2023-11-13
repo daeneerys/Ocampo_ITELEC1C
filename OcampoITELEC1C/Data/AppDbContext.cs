@@ -49,7 +49,7 @@ namespace OcampoITELEC1C.Data
             modelBuilder.Entity<Instructor>().HasData(
                 new Instructor()
                 {
-                    Id = 100,
+                    Id = 1,
                     FirstName = "Gabriel",
                     LastName = "Montano",
                     IsTenured = "Permanent",
@@ -58,7 +58,7 @@ namespace OcampoITELEC1C.Data
                 },
             new Instructor()
             {
-                Id = 200,
+                Id = 2,
                 FirstName = "Lebron",
                 LastName = "James",
                 IsTenured = "Probationary",
@@ -67,7 +67,7 @@ namespace OcampoITELEC1C.Data
             },
             new Instructor()
             {
-                Id = 300,
+                Id = 3,
                 FirstName = "Jessamine",
                 LastName = "Lyndon",
                 IsTenured = "Probationary",
@@ -76,14 +76,14 @@ namespace OcampoITELEC1C.Data
             },
             new Instructor()
             {
-                Id = 101,
+                Id = 4,
                 FirstName = "Marje",
                 LastName = "Algernon",
                 IsTenured = "Permanent",
                 Rank = Rank.AssistantProfessor,
                 HiringDate = DateTime.Parse("2021-05-20")
             }
-                );
+                ); ;
 
         }
 
