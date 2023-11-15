@@ -35,6 +35,7 @@ namespace OcampoITELEC1C.Models
 
         [EmailAddress]
         [Display(Name = "Email")]
+        [Required(ErrorMessage = "* Email is required")]
         public string Email { get; set; }
 
         public int Id { get; set; }
